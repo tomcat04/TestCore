@@ -7,6 +7,7 @@
 package com.wms.ma.service;
 
 import com.wms.ma.bean.MaterialSrcBean;
+import java.util.List;
 
 /**
  * 物料数据源管理接口
@@ -26,7 +27,7 @@ public interface MaterialSrcManageService {
     
     /**
      * 增加一个物料
-     * @param msb
+     * @param list
      */
-    public void addMaterial(MaterialSrcBean msb);
+    public void addMaterial(List<MaterialSrcBean> list);
 }
