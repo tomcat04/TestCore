@@ -23,4 +23,10 @@ public interface MaterialSrcManageService {
      * @return 物料信息
      */
     public MaterialSrcBean querySingleMaterial(String materialCode);
+    
+    /**
+     * 增加一个物料
+     * @param msb
+     */
+    public void addMaterial(MaterialSrcBean msb);
 }

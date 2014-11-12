@@ -18,6 +18,11 @@ import java.io.Serializable;
 public class MaterialSrcBean implements Serializable{
 
     /**
+     * id
+     */
+    private long id;
+    
+    /**
      * 物料号
      */
     private String materialCode;
@@ -31,6 +36,14 @@ public class MaterialSrcBean implements Serializable{
      * 物料来源
      */
     private String materialSrc;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getMaterialCode() {
         return materialCode;
