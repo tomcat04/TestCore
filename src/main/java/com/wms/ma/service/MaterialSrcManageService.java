@@ -30,4 +30,17 @@ public interface MaterialSrcManageService {
      * @param list
      */
     public void addMaterial(List<MaterialSrcBean> list);
+    
+    /**
+     * 增加一列物料(测试编程式事务)
+     * @param list
+     */
+    public void addMaterialList(List<MaterialSrcBean> list);
+    
+    /**
+     * 根据料号查询物料
+     * @param materialCode(料号)
+     * @return 
+     */
+    public MaterialSrcBean getMaterial(String materialCode);
 }
