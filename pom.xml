@@ -15,4 +15,12 @@
         <system>hudson</system>
         <url>http://localhost/jenkins/job/TestCore/</url>
     </ciManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com</groupId>
+            <artifactId>TestUtil</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
 </project>

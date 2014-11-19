@@ -7,6 +7,7 @@
 package com.wms.ma.service;
 
 import com.wms.ma.bean.MaterialSrcBean;
+import com.wms.util.exception.CustomException;
 import java.util.List;
 
 /**
@@ -41,6 +42,7 @@ public interface MaterialSrcManageService {
      * 根据料号查询物料
      * @param materialCode(料号)
      * @return 
+     * @throws com.wms.util.exception.CustomException 
      */
-    public MaterialSrcBean getMaterial(String materialCode);
+    public MaterialSrcBean getMaterial(String materialCode) throws CustomException;
 }
