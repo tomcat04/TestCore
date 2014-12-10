@@ -39,10 +39,12 @@ public interface MaterialSrcManageService {
     public void addMaterialList(List<MaterialSrcBean> list);
     
     /**
-     * 根据料号查询物料
+     * 根据料号查询物料(同步)
      * @param materialCode(料号)
      * @return 
      * @throws com.wms.util.exception.CustomException 
      */
     public MaterialSrcBean getMaterial(String materialCode) throws CustomException;
+    
+    public MaterialSrcBean getMaterialAnsy(String materialCode) throws CustomException;
 }
